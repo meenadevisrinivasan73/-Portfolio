@@ -7,7 +7,7 @@
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap' rel='stylesheet'>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.CSS">
   <title>MEENADEVI - Portfolio</title>
 </head>
 <body>
@@ -16,6 +16,7 @@
 
   <header class="header">
     <a href="#home" class="logo">Meenadevi Srinivasan</a>
+    <i class="bx bx-menu" id="menu-icon"></i>
     <nav class="navbar">
       <a href="#home">Home</a>
       <a href="#about">About me</a>
@@ -24,7 +25,7 @@
       <a href="#certificates">Certificates</a>
       <a href="#Contact">Contact</a>
     </nav>
-      </a>
+      
   
   </header>
   <!--HOME SECTION CODE-->
@@ -191,7 +192,7 @@
       <div class="projects-content">
         <h3>My Portfolio</h3>
         <p>My first portfolio website | designed and developed from scratch using HTML, CSS.</p>
-      <a href="https://github.com/meenadevisrinivasan73/Portfolio.git" class="projects-link">View project<i class="fa-solid fa-arrow-right"></i></a>
+      <a href="https://github.com/meenadevisrinivasan73/-Portfolio.git" class="projects-link">View project<i class="fa-solid fa-arrow-right"></i></a>
       <br>
       </div>
       </div>
@@ -412,6 +413,24 @@ jointly organized by Department of Electrical & Electronics Engineering and Elec
         </div>
     </div>
     </section>
+    <script>
+    let menuIcon = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+
+    // Menu icon ah click panna
+    menuIcon.onclick = () => {
+      menuIcon.classList.toggle('bx-x'); // X mark ah maarum
+      navbar.classList.toggle('active'); // Menu show/hide aagum
+    };
+
+    // Menu link ah click panna menu close aagum
+    document.querySelectorAll('.navbar a').forEach(link => {
+      link.onclick = () => {
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
+      }
+    });
+  </script>
   <!--footer start-->
   <footer class="footer">
     <div class="footer-container">
