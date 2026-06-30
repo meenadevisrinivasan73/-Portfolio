@@ -192,7 +192,7 @@ span {
 .btn:hover {
     box-shadow: 0 0 1.6rem var(--main-color);
 }
-@media(max-width:768px){
+@media(max-width:991px){
   .home{
     flex-direction: row;
     text-align: left;
