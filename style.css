@@ -177,6 +177,49 @@ span {
 .btn:hover {
     box-shadow: 0 0 1.6rem var(--main-color);
 }
+@media (max-width: 480px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .header {
+        padding: 1.5rem 5%;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .home-content h1 {
+        font-size: 3.8rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.2rem;
+    }
+
+    .home-content p {
+        font-size: 1.5rem;
+    }
+
+    .home-img img,
+    .home img {
+        width: 75vw;
+        max-width: 220px;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+        padding: 1rem 2.5rem;
+    }
+}
 
 /* About Section Code */
 
