@@ -77,37 +77,21 @@ section {
     color: var(--bg-color);
     cursor: pointer;
 }
-@media(max-width: 768px){
-  .header{
-    padding: 1rem 4% !important;
-  }
-
-  #menu-icon{
-    display: block !important;
-    font-size: 2.2rem !important;
-    color: #fff !important;
-  }
-
-  .navbar{
-    display: none !important;
-    position: fixed !important;
-    top: 70px !important;
-    left: 0 !important;
-    width: 100% !important;
-    background: #008080 !important;
-    padding: 1rem 0 !important;
-  }
-
-  .navbar.active{
-    display: block !important;
-  }
-
-  .navbar a{
-    display: block !important;
-    text-align: center !important;
-    padding: 0.8rem 0 !important;
-    font-size: 1.1rem !important;
-  }
+@media(max-width:768px){
+    .header{
+        padding: 15px 5%;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .navbar{
+        display: none;
+    }
+    #menu-icon{
+        font-size: 2rem;
+            color: white;
+            cursor: pointer;
+    }
 }
 
 /* home section code */
@@ -208,62 +192,37 @@ span {
 .btn:hover {
     box-shadow: 0 0 1.6rem var(--main-color);
 }
-@media(max-width: 768px){
-  body{
-    overflow-x: hidden !important;
-  }
-
+@media(max-width:768px){
   .home{
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: flex-start !important;
-    padding: 6rem 15px 2rem !important;
-    gap: 10px !important;
+    flex-direction: row;
+    text-align: left;
+    padding: 100px 5% 40px;
+    gap: 2rem;
+    align-items: center;
   }
-
-  .home-img{
-    width: 35% !important;
-  }
-
-  .home-img img{
-    width: 100px !important;
-    height: 100px !important;
-    border-radius: 50% !important;
-  }
-
   .home-content{
-    width: 65% !important;
+    width: 100%;
   }
-
-  .home-content h3{
-    font-size: 0.9rem !important;
-  }
-
   .home-content h1{
-    font-size: 1.2rem !important;
-    line-height: 1.2 !important;
+    font-size: 2.5rem;
   }
-
+  .home-content h3{
+    font-size: 2rem;
+  }
   .home-content p{
-    font-size: 0.7rem !important;
-    line-height: 1.4 !important;
+    font-size: 1rem;
   }
-
-  .social-media{
-    display: flex !important;
-    gap: 6px !important;
-    margin: 0.8rem 0 !important;
+  .home-img{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
   }
-
+  .home-img img{
+    width: 70vw;
+    max-width: 150px;
+  }
   .social-media a{
-    width: 28px !important;
-    height: 28px !important;
-    font-size: 0.9rem !important;
-  }
-
-  .btn{
-    padding: 0.5rem 1.2rem !important;
-    font-size: 0.8rem !important;
+    margin: 1.5rem 0.5rem;
   }
 }
 
@@ -340,39 +299,26 @@ span {
 .detail-value{
     color:rgb(33, 52, 88);
 }
-@media(max-width: 768px){
+@media(max-width:768px){
   .about{
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: flex-start !important;
-    padding: 5rem 15px 2rem !important;
-    gap: 10px !important;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 40px 5%;
+    text-align: left;
+    align-items: center;
   }
-
-  .about-img{
-    width: 35% !important;
-  }
-
   .about-img img{
-    width: 100px !important;
-    height: 100px !important;
+    width: 70vw;
+    max-width: 250px;
   }
-
-  .about-content{
-    width: 65% !important;
+  .heading{
+    font-size: 2.5rem;
   }
-
-  .about-content h2{
-    font-size: 1.4rem !important;
-  }
-
   .about-content h3{
-    font-size: 1rem !important;
+    font-size: 1.5rem;
   }
-
   .about-content p{
-    font-size: 0.7rem !important;
-    line-height: 1.4 !important;
+    font-size: 0.9rem;
   }
 }
 
@@ -834,30 +780,26 @@ span {
 }
 
 @media(max-width: 768px){
-  .contact{
-    padding: 5rem 15px 2rem !important;
+  #menu-icon{
+    display: block;
   }
-
-  .contact h2{
-    font-size: 1.5rem !important;
-    margin-bottom: 1.5rem !important;
+  .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    background: #0F1B2D;
+    display: none;
   }
-
-  .contact form{
-    max-width: 100% !important;
+  .navbar.active{
+    display: block;
   }
-
-  .contact form .input-box input,
-  .contact form textarea{
-    width: 100% !important;
-    padding: 0.8rem !important;
-    font-size: 0.9rem !important;
-    margin-bottom: 0.8rem !important;
-  }
-
-  .contact form .btn{
-    width: 100% !important;
-    padding: 0.8rem !important;
+  .navbar a{
+    display: block;
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    text-align: center;
   }
 }
 /* footer style */
